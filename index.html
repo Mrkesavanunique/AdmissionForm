@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>College Admission Form</h2>
+        <form id="admissionForm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select a Course --</option>
+                <option>B.Tech Computer Science</option>
+                <option>B.Tech AI & Data Science</option>
+                <option>B.Com</option>
+                <option>B.Sc Mathematics</option>
+                <option>BA English</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
